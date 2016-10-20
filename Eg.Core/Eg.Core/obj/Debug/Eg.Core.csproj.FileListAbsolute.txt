@@ -1,0 +1,5 @@
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\Eg.Core\bin\Debug\Eg.Core.dll
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\Eg.Core\bin\Debug\Eg.Core.pdb
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\Eg.Core\obj\Debug\Eg.Core.dll
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\Eg.Core\obj\Debug\Eg.Core.pdb
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\Eg.Core\obj\Debug\Eg.Core.csprojResolveAssemblyReference.cache

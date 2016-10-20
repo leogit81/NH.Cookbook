@@ -1,0 +1,7 @@
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\bin\Debug\ManualRelationships.dll
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\bin\Debug\ManualRelationships.pdb
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\bin\Debug\Iesi.Collections.dll
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\bin\Debug\Iesi.Collections.pdb
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\bin\Debug\Iesi.Collections.xml
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\obj\Debug\ManualRelationships.dll
+C:\Users\loneto\Documents\Visual Studio 2013\Projects\Cookbook\Eg.Core\ManualRelationships\obj\Debug\ManualRelationships.pdb
