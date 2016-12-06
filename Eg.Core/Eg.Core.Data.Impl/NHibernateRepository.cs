@@ -7,7 +7,7 @@ using NHibernate.Linq;
 
 namespace Eg.Core.Data.Impl
 {
-    public class NHibernateRepository<T>: NHibernateBase, IRepository<T> where T: Entity
+    public class NHibernateRepository<T, TId>: NHibernateBase, IRepository<T, TId> where T: Entity<TId>
     {
         public NHibernateRepository(ISessionFactory sessionFactory) : base(sessionFactory)
         {
@@ -29,7 +29,7 @@ namespace Eg.Core.Data.Impl
 
         public bool Contains(T item)
         {
-            if (item.Id == default(Guid))
+            if (Entity<TId>.IsTransient(item))
                 return false;
 
             return Transact(() => session.Get<T>(item.Id)) != null;

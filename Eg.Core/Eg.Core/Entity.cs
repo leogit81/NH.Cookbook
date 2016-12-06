@@ -17,7 +17,7 @@ namespace Eg.Core
             return Equals(obj as Entity<TId>);
         }
 
-        private static bool IsTransient(Entity<TId> obj)
+        public static bool IsTransient(Entity<TId> obj)
         {
             return (obj != null && Equals(obj.Id, default(TId)));
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Eg.Core.Data
 {
-    public interface IRepository<T>: IEnumerable<T> where T : Entity
+    public interface IRepository<T, TId>: IEnumerable<T> where T : Entity<TId>
     {
         void Add(T item);
         bool Contains(T item);
