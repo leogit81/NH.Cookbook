@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using NHibernate.Cfg;
 
-namespace ConfigByAppConfig
+namespace ConfigByXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var nhConfig = new Configuration().Configure();
+            var nhConfig = new Configuration().Configure("cookbook.cfg.xml");
             var sessionFactory = nhConfig.BuildSessionFactory();
-            Console.WriteLine("ConfigByApp - NHibernate configured!");
+            Console.WriteLine("ConfigByXML - NHibernate configured!");
             Console.ReadKey();
         }
     }
