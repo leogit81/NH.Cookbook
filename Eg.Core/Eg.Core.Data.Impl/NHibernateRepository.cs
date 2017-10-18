@@ -27,6 +27,12 @@ namespace Eg.Core.Data.Impl
                 session.Save(item));
         }
 
+        public void Update(T item)
+        {
+            Transact(() =>
+                session.Update(item));
+        }
+
         public bool Contains(T item)
         {
             if (Entity<TId>.IsTransient(item))

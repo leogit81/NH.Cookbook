@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ActorRole.cs" />
     <Compile Include="Book.cs" />
+    <Compile Include="DTOs\GenericDTO.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Product.cs" />
