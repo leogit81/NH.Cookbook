@@ -22,17 +22,34 @@ namespace Eg.Core.Data.Impl
 
         protected virtual TResult Transact<TResult>(Func<TResult> func)
         {
-            if (!session.Transaction.IsActive)
+            TResult result;
+            ITransaction tx = null;
+            try
             {
-                TResult result;
-                using (var tx = session.BeginTransaction())
+                if (!session.Transaction.IsActive)
                 {
+                    tx = session.BeginTransaction();
                     result = func.Invoke();
                     tx.Commit();
+                    return result;
                 }
-                return result;
+                return func.Invoke();
             }
-            return func.Invoke();
+            catch (Exception)
+            {
+                if (tx != null)
+                {
+                    tx.Rollback();
+                }
+                throw;
+            }
+            finally
+            {
+                if(tx != null)
+                {
+                    tx.Dispose();
+                }
+            }
         }
 
         protected virtual void Transact (Action action)
