@@ -41,6 +41,11 @@ namespace Eg.Core.Data.Impl
             return Transact(() => session.Get<T>(item.Id)) != null;
         }
 
+        public bool Contains(Func<T, bool> predicate)
+        {
+            return Transact(() => session.Query<T>().FirstOrDefault(predicate)) != null;
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
             return Transact(() => session.Query<T>()

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Eg.Core.Data
 {
@@ -11,6 +8,7 @@ namespace Eg.Core.Data
         void Add(T item);
         void Update(T item);
         bool Contains(T item);
+        bool Contains(Func<T, bool> predicate);
         int Count { get; }
         bool Remove(T item);
     }
